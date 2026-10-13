@@ -53,6 +53,15 @@ For illustrative interpolation, recompute the model at each displayed parameter 
 
 For objective landscapes, retain the metric definition and fixed parameters. Label log axes, normalization, or height compression. For validation, change the input or operating point and keep fitted parameters fixed; make that distinction visible.
 
+## Glow modes
+
+Use the mode chosen for the current video under the pre-production question in `SKILL.md`. The choice changes surface treatment; preserve the same scientific content, causal animation, color identities, subtitle layout, and approved voice.
+
+- **Low glow:** use a dark matte background, crisp fine strokes, and muted cyan/gold accents. Remove decorative glows on boxes, connectors, and text. Keep any halo around an active object barely visible. With a separate blurred glow layer, about 10% of its standard compositing opacity is a useful starting point; adjust or omit it after inspecting frames. Preserve core-stroke brightness and text contrast.
+- **Standard glow:** use restrained soft halos behind crisp active curves or points, keeping intersections, labels, and comparisons legible.
+
+Inspect dense curve crossings, small labels, equations, and transitions in the selected mode. Store the choice with rendering settings and keep it consistent throughout the video; do not add an on-screen mode or production-status label.
+
 ## Caption and audio review
 
 ### Audience-facing text and provenance

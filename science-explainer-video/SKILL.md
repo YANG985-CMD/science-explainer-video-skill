@@ -1,15 +1,16 @@
 ---
 name: science-explainer-video
-description: Create or revise narrated science and engineering videos with dark, softly glowing diagrams and continuous causal animation. Use when principles, equations, algorithms, or paper improvements should unfold visibly instead of appearing as slide summaries.
+description: Create or revise narrated science and engineering videos with dark diagrams and continuous causal animation, in standard or low-glow mode. Use when principles, equations, algorithms, or paper improvements should unfold visibly instead of appearing as slide summaries.
 ---
 
 # Continuous science explainer video
 
-Produce a watchable video in which the viewer follows the same object from a phenomenon, through its mechanism, to an explanation. The defining style is **continuous causal animation**; a dark palette and glow support it.
+Produce a watchable video in which the viewer follows the same object from a phenomenon, through its mechanism, to an explanation. The defining style is **continuous causal animation**; a dark palette and the selected glow mode support it.
 
 ## Preserve the brief
 
 - Use the user's approved sample and constraints when available. Do not claim to have watched or heard a reference that has not actually been inspected.
+- Before starting each new video, ask whether to use low-glow mode: “这次视频是否使用低泛光模式（画面更朴素、线条更清晰）？” Offer low-glow and standard-glow choices. Ask again for a revision that changes the visual style, but preserve the chosen mode for routine edits to the same video. An explicit choice in the current brief counts as the answer; a previous video's choice alone does not. Wait for the answer before style-dependent previews or rendering; research and script work may continue while waiting.
 - Default to normal playback speed. Change speed only when requested, keeping audio pitch and subtitle timing consistent.
 - For a new standalone video, 1920 × 1080 landscape is a useful default; preserve the requested orientation and aspect ratio.
 - In Chinese audience-facing explanations, prefer “我们” for shared reasoning. Use “我” when the speaker describes their own implementation, choices, and experiments. Preserve the intended perspective in other languages.
@@ -46,6 +47,8 @@ Keep audience-facing frames free of production-status text, including banners or
 Write subtitle quantities with Arabic numerals and standard unit symbols, for example `8.66 V`, `30°`, `24 V`, and `15.47%`. Keep natural Chinese number pronunciation in the narration; preserve terms such as “三相”, “零序”, and “三次谐波”. Normalize display text before wrapping or export, preserving values, signs, precision, and units; see [references/animation-playbook.md](references/animation-playbook.md#subtitle-numbers-and-units).
 
 Glow should stay behind a crisp core stroke. It must not blur text, merge nearby curves, obscure intersections, or become the principal source of contrast. Avoid large card grids when a continuous canvas can show the relationship more clearly.
+
+**Low-glow mode:** preserve the dark canvas and continuous causal animation, use crisp solid strokes and muted accent colors, and greatly reduce or omit decorative halos. Keep text and equations sharp without bloom, and maintain contrast through the core strokes. **Standard-glow mode:** retain restrained soft halos behind crisp strokes. Record the selected mode in production settings, not in audience-facing text; read [references/animation-playbook.md](references/animation-playbook.md#glow-modes) for rendering guidance.
 
 The optional original Pillow helper [scripts/glow_canvas.py](scripts/glow_canvas.py) supplies a logical 1920 × 1080 canvas, soft glow, crisp lines, safe caption placement, and an ffmpeg pipe. [scripts/render_example.py](scripts/render_example.py) demonstrates a computed RC response, residual, parameter update, and objective plot. This minimal example is not a complete video generator or a substitute for subject-specific models.
 
