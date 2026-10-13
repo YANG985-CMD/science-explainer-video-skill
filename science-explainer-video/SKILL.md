@@ -41,6 +41,8 @@ Use a near-black blue background, restrained fine lines, off-white reference obj
 
 Reserve a subtitle area separate from the scientific content. Keep equation labels and provenance out of it. Prefer one short line, or at most two lines where needed; split by spoken phrase and rendered width rather than only character count. Highlight a few terms with their object colors.
 
+Keep audience-facing frames free of production-status text, including banners or footers such as “理想原理计算示意·正常速度·已确认男声”. Do not display playback-speed labels, voice-approval status, rendering details, or generic process descriptions in the cover, diagrams, subtitles, or end card. Keep those details in delivery notes when useful. Retain concise, scene-specific evidence/source notes, assumptions, and distinctions between calculated illustrations and measurements where they help the viewer interpret the content; see [references/animation-playbook.md](references/animation-playbook.md#audience-facing-text-and-provenance).
+
 Write subtitle quantities with Arabic numerals and standard unit symbols, for example `8.66 V`, `30°`, `24 V`, and `15.47%`. Keep natural Chinese number pronunciation in the narration; preserve terms such as “三相”, “零序”, and “三次谐波”. Normalize display text before wrapping or export, preserving values, signs, precision, and units; see [references/animation-playbook.md](references/animation-playbook.md#subtitle-numbers-and-units).
 
 Glow should stay behind a crisp core stroke. It must not blur text, merge nearby curves, obscure intersections, or become the principal source of contrast. Avoid large card grids when a continuous canvas can show the relationship more clearly.
@@ -65,5 +67,7 @@ Before the full render, inspect frames where labels are longest, objects cross, 
 Deliver an encoded video, synchronized subtitles if useful, and a concise source/script companion. Verify the actual encoded file: resolution, aspect ratio, duration, successful full decode, audio presence when narrated, subtitle bounds, and representative transition/diagram frames. For quantitative scenes, check plotted values and displayed metrics against the data. A static contact sheet does not establish temporal synchronization.
 
 Check numeral and unit formatting in both burned-in captions and exported subtitle files before delivery; changing only the sidecar file does not update the video.
+
+Inspect covers, persistent footers, diagrams, captions, and end cards for unnecessary production-status text; retain useful evidence and source notes.
 
 Report material limitations honestly. Do not call a preview a complete video or say a check passed without running it.

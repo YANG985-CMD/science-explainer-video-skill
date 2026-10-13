@@ -55,6 +55,12 @@ For objective landscapes, retain the metric definition and fixed parameters. Lab
 
 ## Caption and audio review
 
+### Audience-facing text and provenance
+
+Display text that explains the science or its basis. Do not put production-status strings such as “理想原理计算示意·正常速度·已确认男声”, “已确认音色”, or rendering/version details on the cover, in a persistent footer, in subtitles, or on the end card. Playback speed and voice selection belong in delivery notes if needed.
+
+Useful provenance may remain, for example “依据：理想两电平逆变器模型计算” or a paper's author, year, and figure number. State relevant assumptions or mark a specific numerical example as calculated when that prevents it being mistaken for a measurement. Use a concise source note near the relevant scene rather than a generic production banner. Check these areas in the actual encoded frames before delivery.
+
 Compare actual encoded subtitles with the spoken sentence, especially at action boundaries. Prefer phrase-level audio alignment over proportional-character estimates. If only a rough timeline is available, inspect representative joins and identify the approximation.
 
 ### Subtitle numbers and units
