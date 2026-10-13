@@ -57,6 +57,25 @@ For objective landscapes, retain the metric definition and fixed parameters. Lab
 
 Compare actual encoded subtitles with the spoken sentence, especially at action boundaries. Prefer phrase-level audio alignment over proportional-character estimates. If only a rough timeline is available, inspect representative joins and identify the approximation.
 
+### Subtitle numbers and units
+
+Separate spoken narration from subtitle display text. A narrator may say “八点六六伏”; the subtitle displays `8.66 V`. Derive both from the same value, and normalize subtitle text before measuring width, wrapping lines, generating ASS/SRT/VTT, or burning captions into frames.
+
+| Spoken Chinese | Subtitle display |
+| --- | --- |
+| 八点六六伏 | 8.66 V |
+| 三十度 | 30° |
+| 二十四伏 | 24 V |
+| 百分之十五点四七 | 15.47% |
+| 三十六点一微秒 | 36.1 μs |
+| 负五伏 | −5 V |
+| 六分之一 | 1/6 |
+| 全零、一零零、一一零、全一（开关状态） | 000、100、110、111 |
+
+Use a space between a number and a unit symbol such as `V`, `A`, `μs`, or `Hz`; keep angle and percent forms as `30°` and `15.47%`. Preserve the quantity's meaning, sign, precision, and context, including peak versus RMS and electrical versus mechanical angle. Do not turn “三相”, “两电平”, “零序”, “三次谐波”, or ordinary prose into digit substitutions. Switch-state bit strings retain leading zeros.
+
+Before delivery, scan the final subtitle text for overlooked Chinese decimals, percentages, fractions, durations, and quantities next to units; review matches in context. Check the corresponding encoded frames and exported subtitle files, including signs, decimals, unit glyphs, and line bounds. A subtitle-only formatting edit should preserve narration audio and timing; regenerate the burned-in captions as well as the sidecar file.
+
 Reserve a caption band before composing content. Measure text with the actual font, including CJK, math symbols, and units. Avoid placing sources, axes, or moving points in the subtitle band. Font fallback is not evidence of complete glyph coverage.
 
 Use the speaker's authorized voice profile. The repository owner's explicitly published reference narrator is described in [voice-profile.md](voice-profile.md); other private profiles remain external to the distributable skill unless publishing is authorized. Preserve natural pitch, clarity, and breathing room. Playback-speed edits require synchronized video timing, audio tempo, and subtitle timestamps.
