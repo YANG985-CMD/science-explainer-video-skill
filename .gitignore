@@ -14,3 +14,8 @@ venv/
 *.safetensors
 voice_profiles/
 render-output/
+
+# Only these reference audios were explicitly approved for public distribution.
+!science-explainer-video/assets/voice/default-zh-male/approved-preview.wav
+!science-explainer-video/assets/voice/default-zh-male/approved-preview.mp3
+!science-explainer-video/assets/voice/default-zh-male/icl-reference.wav

@@ -1,0 +1,8 @@
+# Recorded narrator runtime; separate from the lightweight animation dependencies.
+# For a CPU-only installation, install torch from its CPU index first (see voice-profile.md).
+qwen-tts==0.1.1
+torch==2.9.1
+transformers==4.57.3
+numpy==2.5.4
+soundfile==0.14.0
+huggingface-hub==0.36.2

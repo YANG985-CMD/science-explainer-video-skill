@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "profile_id": "default_video_male_20261012",
+  "display_name": "中文科普男声（已确认参考声线）",
+  "confirmed_date": "2026-10-12",
+  "published_date": "2026-10-14",
+  "asset_license": "MIT",
+  "publication": "Repository owner explicitly authorized publishing the confirmed narrator resources.",
+  "reference_audio": "icl-reference.wav",
+  "reference_transcript_file": "icl-reference.txt",
+  "reference_transcript": "控制器在生成边界内；逆变器、电机和日志都在外。",
+  "approved_audio": "approved-preview.wav",
+  "preview_audio": "approved-preview.mp3",
+  "approved_transcript_file": "approved-transcript.txt",
+  "approved_transcript": "转子旋转时，磁极经过固定的霍尔元件。磁场达到切换条件，输出电平就会翻转。三个霍尔依次变化，每隔六十度电角度，提供一次位置标记。",
+  "model": {
+    "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "license": "Apache-2.0",
+    "distribution": "Download from upstream; weights not included here.",
+    "identity": "Recorded configuration and weight SHA-256 checksums in model_assets."
+  },
+  "generation": {
+    "method": "experimental_icl_with_runtime_type_override_and_zero_speaker_embedding",
+    "official_voice_clone_supported": false,
+    "runtime_type_override": "base",
+    "speaker_embedding": "zeros(1, talker.hidden_size)",
+    "icl_mode": true,
+    "x_vector_only_mode": false,
+    "language": "Chinese",
+    "device": "cpu",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "cpu_threads": 6,
+    "seed": 42,
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "max_new_tokens": 512,
+    "output_sample_rate_hz": 24000,
+    "tempo": 1.0,
+    "pitch_shift": 1.0,
+    "original_preview_seed": null
+  },
+  "tested_runtime": {
+    "python": "3.12.14",
+    "qwen-tts": "0.1.1",
+    "torch": "2.9.1+cpu",
+    "transformers": "4.57.3",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0",
+    "huggingface-hub": "0.36.2"
+  },
+  "audio_assets": [
+    {
+      "file": "approved-preview.wav",
+      "bytes": 545324,
+      "sha256": "1c834d3b5c890cd2fd1442da29358f8f5528f3f43d240fb005393b60f5e9fff5",
+      "sample_rate_hz": 24000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "frames": 272640,
+      "duration_seconds": 11.36
+    },
+    {
+      "file": "approved-preview.mp3",
+      "bytes": 182828,
+      "sha256": "ffdf7e6c6f935d1d2bece9bc5b09724a148788a17229cc3b246fc8f6157bf99f"
+    },
+    {
+      "file": "icl-reference.wav",
+      "bytes": 161044,
+      "sha256": "79ef2ef2a8d6ce77e761c9320936c73a4f739436e84a69f95316897fbaa8d26c",
+      "sample_rate_hz": 22050,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "frames": 80483,
+      "duration_seconds": 3.6500226757369614
+    }
+  ],
+  "model_assets": [
+    {
+      "file": "config.json",
+      "bytes": 4908,
+      "sha256": "81aca2b6fac304944d8acf345272d8a9a727d5fc2e2e66b222ab4729340c7455"
+    },
+    {
+      "file": "generation_config.json",
+      "bytes": 245,
+      "sha256": "f1b90b4513f3b34c62851049e2492d7b4c5940daf1276f89c82b8ef04127f3aa"
+    },
+    {
+      "file": "model.safetensors",
+      "bytes": 1811626576,
+      "sha256": "bc3c7e785eb961179c25450d1acff03f839e0002f2f3a5aeb67b5735c0fa2adb"
+    },
+    {
+      "file": "speech_tokenizer/config.json",
+      "bytes": 2336,
+      "sha256": "ee65bb901c876664ab8707c487157aa1a6ee57c65969b28fb5ec9dc211e68167"
+    },
+    {
+      "file": "speech_tokenizer/model.safetensors",
+      "bytes": 682293092,
+      "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+    }
+  ],
+  "limitations": "Preserves the confirmed experimental recipe, not a separately trained speaker model. The original approved sample had no fixed seed; new text and different runtimes require voice/content review, not sample-exact equivalence."
+}

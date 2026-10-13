@@ -59,7 +59,7 @@ Compare actual encoded subtitles with the spoken sentence, especially at action 
 
 Reserve a caption band before composing content. Measure text with the actual font, including CJK, math symbols, and units. Avoid placing sources, axes, or moving points in the subtitle band. Font fallback is not evidence of complete glyph coverage.
 
-Use the speaker's authorized voice profile as an input external to the distributable skill. Preserve natural pitch, clarity, and breathing room. Playback-speed edits require synchronized video timing, audio tempo, and subtitle timestamps.
+Use the speaker's authorized voice profile. The repository owner's explicitly published reference narrator is described in [voice-profile.md](voice-profile.md); other private profiles remain external to the distributable skill unless publishing is authorized. Preserve natural pitch, clarity, and breathing room. Playback-speed edits require synchronized video timing, audio tempo, and subtitle timestamps.
 
 ## Minimal demonstration model
 
@@ -67,4 +67,4 @@ The bundled example uses an ideal series resistor and capacitor driven by a 5 V 
 
 Reference values are R = 2 ohm and C = 0.4 F. Candidate R moves from 1 to 2 ohm while C stays fixed. At every frame the prediction is recomputed from that displayed R. Residual is prediction minus reference; MSE is mean squared residual over the same uniformly sampled 0–4 s interval, in V². The path is illustrative, not an optimization algorithm. It has no experiment or paper-performance claim.
 
-The final objective plot uses the same reference, model, fixed C, and MSE. The example is silent to avoid bundling any user's voice or implying that a TTS service is required.
+The final objective plot uses the same reference, model, fixed C, and MSE. The RC example is silent and runs independently of the optional bundled reference narrator.
