@@ -1,0 +1,4 @@
+interface:
+  display_name: "Continuous Science Explainer"
+  short_description: "Causal science animation with continuous visual objects"
+  default_prompt: "Use $science-explainer-video to create a narrated science video with continuous causal animation."
