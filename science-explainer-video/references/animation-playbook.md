@@ -2,6 +2,8 @@
 
 Read this when deciding what should move and how one explanation should lead into another.
 
+This playbook supplies shared causal, evidence, and transition checks. In 无配音简约风, replace spoken beats and narration-driven timing with on-screen reading/action beats from [minimalist-no-voiceover.md](minimalist-no-voiceover.md). Do not require voice synthesis, a transcript band, or an audio stream in that mode.
+
 ## Plan a scene around an observable operation
 
 Use a scene record rather than a list of slide headings:
@@ -17,7 +19,7 @@ fixed_conditions: other model parameters and the input record
 source: derived model plus simulation configuration
 ```
 
-Set the operation's timing from the recorded sentence. For multi-step narration, use separate beats for selecting an interval, measuring the discrepancy, aggregating it, and applying an update. A single normalized progress number suffices for a short demo; a full video usually needs action timestamps.
+For narrated mode, set the operation's timing from the recorded sentence. For minimalist mode, set it after the relevant sentence has become readable and allow time to observe the result. Use separate beats for selecting an interval, measuring the discrepancy, aggregating it, and applying an update. A single normalized progress number suffices for a short demo; a full video usually needs action timestamps.
 
 ## Continuity patterns
 
@@ -32,6 +34,28 @@ Set the operation's timing from the recorded sentence. For multi-step narration,
 | Staged mechanical identification | Show steady-speed torque balance before acceleration torque. | Reuse friction estimates when isolating inertia; state load assumptions. |
 
 These are animation patterns. They do not prove that a named paper uses a particular formula; verify that independently.
+
+## Transitions and visual substance
+
+Build a visual inventory from the narration timeline before rendering. For every spoken beat, record the object, visible operation, changing state, and next view. Mark a beat for revision if its entire frame is only text, a formula, or a table. Replace it with the relevant physical device, signal trace, vector, or mechanism; keep explanatory labels short. A table may support a comparison when its values visibly drive the diagram beside it.
+
+Use visual variety to explain, not to decorate. For example, follow a switch timing gap into the conducting diode, zoom into its missing voltage area, then link the resulting current distortion to its spectrum. Keep a source object visible when a new view needs context. Do not reuse the same large frame unchanged while narrating several different mechanisms.
+
+For each chapter boundary and within-scene layout change, inspect decoded frames immediately before, during, and after the transition. Check the shared object's position and scale, signal colors, axis units, moving cursor, labels, caption band, and source note. Inspect the surrounding narrated segment as well: a clean midpoint image alone cannot prove a good transition.
+
+Avoid blending two complete text layers into ghosted labels. Prefer a shared-object move or separate graphic-layer transition; for unrelated compositions, a short fade through dark can occur inside an existing narration pause. Hold the completed old view until the transition begins, and make the new view readable before its next spoken explanation. Draw captions and provenance once after composition. Intentional fades must not turn into unexplained black flashes during speech.
+
+Add a separate review item, “转场后是否重影”, for every scene or layout transition. Decode several frames after the transition has fully finished, including the start of the next spoken explanation, and watch the surrounding segment. Check that old labels, axes, captions, source notes, curves, and object silhouettes are gone unless deliberately carried forward. Distinguish a labeled scientific history trace from an unintended stale-frame trail. If an old layer persists or alpha accumulation doubles a current object, clear or replace the scene layers, re-encode the affected segment, and review it again. Record checked timestamps and the outcome in delivery checks; inspecting only the blended midpoint cannot satisfy this item.
+
+Deliver only after the encoded transitions and the visual inventory pass this review; a storyboard or static contact sheet alone is insufficient.
+
+## Cover and opening
+
+Create a standalone PNG cover at the video's resolution and aspect ratio, and deliver it beside the encoded video. Use a short title and a representative scientific object or mechanism in the selected visual style; avoid a title-only table or production-status labels. The cover must also appear as the video's actual opening, not merely as player artwork or an external thumbnail.
+
+A readable hold of about 2–3 seconds is a useful starting point; adapt it to title length and the user's brief. Use a clean shared-object change, cut, or brief fade through dark into the first explanation. Avoid crossfading complete text layers. Inspect the encoded first frame, cover hold, transition, and several fully settled frames of the first scene for readability and ghosting.
+
+If inserting a cover before an existing edit, shift all downstream animation, on-screen text, and any narration or subtitle timing by the exact inserted duration. Check the first explanation and a later one for synchronization, and verify the resulting duration and successful full decode. In narrated mode, keep the approved voice and normal playback speed unless the user asks to change them. In minimalist mode, keep the edit free of audio unless requested. Include cover-file, encoded-opening, and post-transition ghosting review results in the delivery checks.
 
 ## Literature sequence
 
