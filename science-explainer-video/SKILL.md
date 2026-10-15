@@ -53,6 +53,9 @@ For a paper or algorithm, animate **difficulty → visible failure → added ope
 
 ## Transitions and visual substance
 
+In minimalist mode, the owner's requirement is: **“转场、文字的出现不能太生硬，要丝滑。”** Use eased graphic continuity and a gentle text entrance/exit instead of abrupt pops or whole-frame hard cuts. Keep graphic and text layers separate: old text departs before different new text arrives, while the meaningful graphic can continue or dissolve smoothly. Leave a readable settled hold, and verify the encoded motion and post-transition ghosting; see the minimalist reference for timing guidance.
+
+
 The owner's standing requirement is: “视频检查一下转场，不要出现一张图只有字表的情况，要把图丰富起来。”
 
 - Explain each spoken beat, or each on-screen explanatory beat in minimalist mode, with a meaningful non-text object: a mechanism, device, waveform, rotating vector, physical action, or data-linked graphic. A full-screen list, formula, or table alone does not satisfy this video style. Connect text and table values to a visible mechanism or changing response; use the selected mode's text hierarchy.

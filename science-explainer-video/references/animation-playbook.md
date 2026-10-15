@@ -37,6 +37,9 @@ These are animation patterns. They do not prove that a named paper uses a partic
 
 ## Transitions and visual substance
 
+For 无配音简约风, transitions and text entrances/exits must feel smooth: use eased graphics, gentle opacity changes and small text motion, not abrupt pops. Separate the text layer from graphic continuity and keep different text layers from overlapping; apply this to within-scene sentence changes as well. Read the minimalist reference's timing guidance and inspect actual encoded motion, including settled post-transition frames.
+
+
 Build a visual inventory from the narration timeline before rendering. For every spoken beat, record the object, visible operation, changing state, and next view. Mark a beat for revision if its entire frame is only text, a formula, or a table. Replace it with the relevant physical device, signal trace, vector, or mechanism; keep explanatory labels short. A table may support a comparison when its values visibly drive the diagram beside it.
 
 Use visual variety to explain, not to decorate. For example, follow a switch timing gap into the conducting diode, zoom into its missing voltage area, then link the resulting current distortion to its spectrum. Keep a source object visible when a new view needs context. Do not reuse the same large frame unchanged while narrating several different mechanisms.

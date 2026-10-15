@@ -26,6 +26,8 @@
 
 加泛光时采用更明显的线条光晕，同时保留清晰核心和文字。画面底部不再放来源/方法的小字行，依据完整放在附带文档里，图中必要的单位、条件和解释仍保留。
 
+简约风的转场、文字出现必须丝滑：图形用缓动承接，文字轻微移动并渐显、渐隐，避免硬切和突然跳出；图文分层处理，转场完成后检查没有旧字或残影。
+
 [无配音简约风规范](science-explainer-video/references/minimalist-no-voiceover.md)记录了构图、短文案、阅读节奏和准确曲目。按所有者的明确要求，现已提供这首背景音乐的独立音源：
 
 - [M4A 原音轨](science-explainer-video/assets/music/we-never-remix/we-never-remix.m4a)：直接提取 AAC 音轨，没有重新编码。
