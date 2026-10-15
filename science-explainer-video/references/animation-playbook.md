@@ -43,7 +43,7 @@ Use visual variety to explain, not to decorate. For example, follow a switch tim
 
 For each chapter boundary and within-scene layout change, inspect decoded frames immediately before, during, and after the transition. Check the shared object's position and scale, signal colors, axis units, moving cursor, labels, caption band, and source note. Inspect the surrounding narrated segment as well: a clean midpoint image alone cannot prove a good transition.
 
-Avoid blending two complete text layers into ghosted labels. Prefer a shared-object move or separate graphic-layer transition; for unrelated compositions, a short fade through dark can occur inside an existing narration pause. Hold the completed old view until the transition begins, and make the new view readable before its next spoken explanation. Draw captions and provenance once after composition. Intentional fades must not turn into unexplained black flashes during speech.
+Avoid blending two complete text layers into ghosted labels. Prefer a shared-object move or separate graphic-layer transition; for unrelated compositions, a short fade through dark can occur inside an existing narration pause. Hold the completed old view until the transition begins, and make the new view readable before its next spoken explanation. Draw explanatory captions once after composition; keep source/method footers in the companion document. Intentional fades must not turn into unexplained black flashes during speech.
 
 Add a separate review item, “转场后是否重影”, for every scene or layout transition. Decode several frames after the transition has fully finished, including the start of the next spoken explanation, and watch the surrounding segment. Check that old labels, axes, captions, source notes, curves, and object silhouettes are gone unless deliberately carried forward. Distinguish a labeled scientific history trace from an unintended stale-frame trail. If an old layer persists or alpha accumulation doubles a current object, clear or replace the scene layers, re-encode the affected segment, and review it again. Record checked timestamps and the outcome in delivery checks; inspecting only the blended midpoint cannot satisfy this item.
 
@@ -81,8 +81,8 @@ For objective landscapes, retain the metric definition and fixed parameters. Lab
 
 Use the mode chosen for the current video under the pre-production question in `SKILL.md`. The choice changes surface treatment; preserve the same scientific content, causal animation, color identities, subtitle layout, and approved voice.
 
-- **Low glow:** use a dark matte background, crisp fine strokes, and muted cyan/gold accents. Remove decorative glows on boxes, connectors, and text. Keep any halo around an active object barely visible. With a separate blurred glow layer, about 10% of its standard compositing opacity is a useful starting point; adjust or omit it after inspecting frames. Preserve core-stroke brightness and text contrast.
-- **Standard glow:** use restrained soft halos behind crisp active curves or points, keeping intersections, labels, and comparisons legible.
+- **Low glow:** use a dark matte background, crisp fine strokes, and muted accents from the chosen palette. Remove decorative glows on boxes, connectors, and text. Keep any halo around an active object barely visible. With a separate blurred glow layer, about 10% of its standard compositing opacity is a useful starting point; adjust or omit it after inspecting frames. Preserve core-stroke brightness and text contrast.
+- **Standard glow:** use clearly visible strengthened line halos behind crisp active curves or points. Combine a narrow near halo with a broader soft halo while preserving the original stroke color and unblurred text. Keep intersections and nearby comparison curves distinguishable. The palette choice (金色强调 or 深蓝青金) is independent of glow and narration.
 
 Inspect dense curve crossings, small labels, equations, and transitions in the selected mode. Store the choice with rendering settings and keep it consistent throughout the video; do not add an on-screen mode or production-status label.
 
@@ -92,7 +92,7 @@ Inspect dense curve crossings, small labels, equations, and transitions in the s
 
 Display text that explains the science or its basis. Do not put production-status strings such as “理想原理计算示意·正常速度·已确认男声”, “已确认音色”, or rendering/version details on the cover, in a persistent footer, in subtitles, or on the end card. Playback speed and voice selection belong in delivery notes if needed.
 
-Useful provenance may remain, for example “依据：理想两电平逆变器模型计算” or a paper's author, year, and figure number. State relevant assumptions or mark a specific numerical example as calculated when that prevents it being mistaken for a measurement. Use a concise source note near the relevant scene rather than a generic production banner. Check these areas in the actual encoded frames before delivery.
+For this owner, do not render a bottom small-print row of provenance, method names, or citations, including “常规中心对齐 SVPWM 的 min/max 等价实现 [1,3]”. Preserve source titles, sections/figures and citations in the companion document. Put essential model conditions, units, or calculated-versus-measured distinctions in ordinary readable annotations beside the relevant diagram. Keep explanatory captions; an author/year may appear in main content when discussing that paper. Check the actual encoded lower edge after every scene change, including the cover and ending.
 
 Compare actual encoded subtitles with the spoken sentence, especially at action boundaries. Prefer phrase-level audio alignment over proportional-character estimates. If only a rough timeline is available, inspect representative joins and identify the approximation.
 

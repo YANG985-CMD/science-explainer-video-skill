@@ -14,17 +14,18 @@ Keep two choices available; adding the second does not replace the first or chan
 1. **男声讲解风 — narrated explanation:** the existing continuous diagrams with the user's approved voice; choose standard, low, or no glow according to the brief.
 2. **无配音简约风 — no-voiceover minimalist:** concise on-screen prose and a spacious, direct main graphic carry the explanation. Produce no human speech or TTS. For this owner, keep the finished video between **3 and 4 minutes** and use instrumental **WeNever (Remix)（若如初见）— Hi Noise / 秋成** as background music, unless the current brief overrides these preferences. Read [references/minimalist-no-voiceover.md](references/minimalist-no-voiceover.md) before storyboarding this mode.
 
-Before producing a new video, confirm these **two questions together**, without adding a separate redundant style/glow round:
+Before producing a new video, confirm these **three questions together**, keeping explanation style, glow, and palette as independent choices:
 
 1. “是否使用简约风？（简约风成片 3–4 分钟，无人声，背景音乐默认用纯音乐《We Never》）” Offer 简约风 and 原男声讲解风.
 2. “是否加泛光？” Offer 加泛光 and 不加泛光. A requested low-glow treatment counts as a specific answer and should be preserved.
+3. “配色选金色强调，还是深蓝青金（原男声讲解风配色）？” Offer 金色强调 and 深蓝青金. Choosing the narrated palette does not add narration or change the minimalist duration/music requirements.
 
-An explicit answer already present in the current brief counts; ask only the missing items. Preserve the choices for routine revisions. In minimalist mode with glow enabled, add restrained halos to active curves/points while preserving spacious composition and crisp text; no-glow removes halos. In narrated mode, retain the existing approved voice and apply the chosen surface treatment. Research and scripting may proceed while a needed answer is pending; wait before style-dependent rendering.
+An explicit answer already present in the current brief counts; ask only the missing items. Preserve the choices for routine revisions. With glow enabled, use visibly stronger line halos behind crisp active curves/points while preserving spacious composition, distinct curve colors, and sharp text. A near halo plus a broader soft halo is a useful implementation; keep the original core stroke intact. No-glow removes halos, and an explicit low-glow preference reduces them. Apply the selected palette independently of the narration choice. In narrated mode, retain the existing approved voice and apply the chosen surface treatment. Research and scripting may proceed while a needed answer is pending; wait before style-dependent rendering.
 
 ## Preserve the brief
 
 - Use the user's approved sample and constraints when available. Do not claim to have watched or heard a reference that has not actually been inspected.
-- Apply the two-question confirmation above. A previous video's style/glow choice alone does not answer a new video's questions; an explicit choice in the current brief does. Do not infer no-glow merely from “简约风”. Keep explicit standard-, low-, or no-glow preferences and ask only when they are missing.
+- Apply the three-question confirmation above. A previous video's style/glow/palette choices alone do not answer a new video's questions; an explicit choice in the current brief does. Do not infer no-glow merely from “简约风”. Keep explicit standard-, low-, or no-glow preferences and ask only when they are missing.
 - Default to normal playback speed. Change speed only when requested, keeping audio pitch and subtitle timing consistent.
 - For a new standalone video, 1920 × 1080 landscape is a useful default; preserve the requested orientation and aspect ratio.
 - In Chinese audience-facing explanations, prefer “我们” for shared reasoning. Use “我” when the speaker describes their own implementation, choices, and experiments. Preserve the intended perspective in other languages.
@@ -58,21 +59,26 @@ The owner's standing requirement is: “视频检查一下转场，不要出现�
 - Vary the view when it clarifies the next cause: whole system, local detail, time trace, frequency trace, or side-by-side comparison. Do not fill a passage with one repeated loop or add unrelated decorative motion.
 - Inspect each scene change and each within-scene layout change in the actual encoded video before, during, and after the transition. Preserve object identity and avoid double labels, overlapping captions, clipped diagrams, unintended black flashes, and motion that resets without explanation.
 - Explicitly check “转场后是否重影”: after the transition has ended, the new scene must contain no unintended remnants of the previous scene, doubled text or curves, or accumulating trails. Inspect several subsequent frames and the surrounding playback; correct any residual layers and recheck the encoded result before delivery.
-- Do not blindly crossfade complete text-bearing frames. Carry a shared object across the change, transition graphic layers separately, or use a short fade through dark in a narration pause. Render captions and source labels once, and finish the transition before the next explanation needs its diagram. Read [references/animation-playbook.md](references/animation-playbook.md#transitions-and-visual-substance) for review details.
+- Do not blindly crossfade complete text-bearing frames. Carry a shared object across the change, transition graphic layers separately, or use a short fade through dark in a narration pause. Render explanatory captions once, keep source/method footers in the companion document, and finish the transition before the next explanation needs its diagram. Read [references/animation-playbook.md](references/animation-playbook.md#transitions-and-visual-substance) for review details.
 
 ## Visual language
 
-For narrated mode, use a near-black blue background, restrained fine lines, off-white reference objects, cyan active/model objects, gold comparisons/residuals, and optional pink/purple parameter colors. Minimalist mode uses the more limited palette and spacious composition in its reference. Preserve a user's approved palette.
+Palette and explanation style are independent. Offer **金色强调** and **深蓝青金（原男声讲解风配色）** before each new video when the brief has not selected one.
+
+- **金色强调 / dark ivory-gold:** near-black blue `#090F15`, off-white `#E8E9E1`, gray context `#8D979E`, warm gold active emphasis `#D3B370`.
+- **深蓝青金 / dark cyan-gold:** blue-black `#050B0F`, off-white references `#EBF3EF`, cyan active/model objects `#59DDDC`, gold comparisons/residuals `#FFD278`. Optional pink `#E88BA7` and purple `#B1A2F4` distinguish additional variables only when needed.
+
+Keep variable roles/colors consistent across scenes. Update text legends when recoloring curves. Minimalist mode keeps its spacious composition with either palette; selecting 深蓝青金 does not select the male voice.
 
 In narrated mode, reserve a subtitle area separate from the scientific content. Keep equation labels and provenance out of it. Prefer one short line, or at most two lines where needed; split by spoken phrase and rendered width rather than only character count. In minimalist mode, compose short explanatory text as part of the scene instead of adding a second transcript band. Highlight a few terms with their object colors.
 
-Keep audience-facing frames free of production-status text, including banners or footers such as “理想原理计算示意·正常速度·已确认男声”. Do not display playback-speed labels, voice-approval status, rendering details, or generic process descriptions in the cover, diagrams, subtitles, or end card. Keep those details in delivery notes when useful. Retain concise, scene-specific evidence/source notes, assumptions, and distinctions between calculated illustrations and measurements where they help the viewer interpret the content; see [references/animation-playbook.md](references/animation-playbook.md#audience-facing-text-and-provenance).
+Keep audience-facing frames free of production-status text, including banners or footers such as “理想原理计算示意·正常速度·已确认男声”. Do not display playback-speed labels, voice-approval status, rendering details, or generic process descriptions in the cover, diagrams, subtitles, or end card. Keep those details in delivery notes when useful. For this owner, remove bottom-edge small-print source/method/citation rows, such as “常规中心对齐 SVPWM 的 min/max 等价实现 [1,3]”. Keep evidence and citations in the source/script companion. Retain essential units, model conditions, and calculated-versus-measured distinctions as readable annotations integrated with the relevant graphic; an author/year may stay in the main content when the paper itself is the subject; see [references/animation-playbook.md](references/animation-playbook.md#audience-facing-text-and-provenance).
 
 Write displayed quantities in captions, titles, and graphics with Arabic numerals and standard unit symbols, for example `8.66 V`, `30°`, `24 V`, and `15.47%`. Keep natural Chinese number pronunciation when narration is used; preserve terms such as “三相”, “零序”, and “三次谐波”. Normalize display text before wrapping or export, preserving values, signs, precision, and units; see [references/animation-playbook.md](references/animation-playbook.md#subtitle-numbers-and-units).
 
 Glow should stay behind a crisp core stroke. It must not blur text, merge nearby curves, obscure intersections, or become the principal source of contrast. Avoid large card grids when a continuous canvas can show the relationship more clearly.
 
-**Low-glow mode:** preserve the dark canvas and continuous causal animation, use crisp solid strokes and muted accent colors, and greatly reduce or omit decorative halos. Keep text and equations sharp without bloom, and maintain contrast through the core strokes. **Standard-glow mode:** retain restrained soft halos behind crisp strokes. Record the selected mode in production settings, not in audience-facing text; read [references/animation-playbook.md](references/animation-playbook.md#glow-modes) for rendering guidance.
+**Low-glow mode:** preserve the dark canvas and continuous causal animation, use crisp solid strokes and muted accent colors, and greatly reduce or omit decorative halos. Keep text and equations sharp without bloom, and maintain contrast through the core strokes. **Standard-glow mode:** use clearly visible line glow, stronger than the former faint minimalist halo, with a crisp core and separate soft near/far halos. Keep neighboring curves distinguishable and text free from blur. Record the selected mode in production settings, not in audience-facing text; read [references/animation-playbook.md](references/animation-playbook.md#glow-modes) for rendering guidance.
 
 The optional original Pillow helper [scripts/glow_canvas.py](scripts/glow_canvas.py) supplies a logical 1920 × 1080 canvas, soft glow, crisp lines, safe caption placement, and an ffmpeg pipe. [scripts/render_example.py](scripts/render_example.py) demonstrates a computed RC response, residual, parameter update, and objective plot. This minimal example is not a complete video generator or a substitute for subject-specific models.
 
@@ -99,7 +105,7 @@ For 无配音简约风, verify a 3–4 minute finished duration and no human spe
 
 Check numeral and unit formatting in both burned-in captions and exported subtitle files before delivery; changing only the sidecar file does not update the video.
 
-Inspect covers, persistent footers, diagrams, captions, and end cards for unnecessary production-status text; retain useful evidence and source notes.
+Inspect covers, diagrams, captions, and end cards for unnecessary production-status text and bottom source/method footers. Keep sources and evidence in the companion document; retain meaningful diagram labels and explanatory captions.
 
 Verify the separate cover file and the actual encoded opening, including its transition into the first scene. Record the explicit post-transition ghosting check alongside transition review; cover and opening review must pass before delivery.
 
