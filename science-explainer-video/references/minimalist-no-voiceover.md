@@ -1,10 +1,10 @@
 # 无配音简约风
 
-Use this as **style choice 2**. It is a self-contained visual explanation designed for later instrumental music, with no human narration. Preserve choice 1 and the owner's existing voice profile.
+Use this as **style choice 2**. It is a self-contained visual explanation with no human narration. For this owner, the finished video is **3–4 minutes**, with instrumental **We Never** as the default background music. Preserve choice 1 and the owner's existing voice profile. Current explicit instructions override these defaults.
 
 ## Reference and scope of inspection
 
-Owner reference: [长留zero：37%法则](https://www.douyin.com/video/7691722835458313514), inspected in the browser on 2026-10-15. The player reported a duration of about 2:43. Representative opening, early, middle, and ending frames were visually inspected; this was not a full frame-by-frame or audio analysis. The no-voiceover / instrumental-music requirement comes directly from the owner, who will find and add the music.
+Owner reference: [长留zero：37%法则](https://www.douyin.com/video/7691722835458313514), inspected in the browser on 2026-10-15. The player reported a duration of about 2:43. Representative opening, early, middle, and ending frames were visually inspected; this was not a full frame-by-frame or audio analysis. The no-voiceover requirement comes directly from the owner. The initial brief left music to the owner; their subsequent 2026-10-15 update asks the agent to add instrumental We Never, keep minimalist videos to 3–4 minutes, and ask about both minimalist style and glow before production.
 
 Observed visual patterns:
 
@@ -24,7 +24,7 @@ These observations guide original composition. Do not reuse the reference's foot
 - Use a near-black or very dark blue canvas, off-white primary text, muted gray context, and one warm gold accent. Add a second accent only when it encodes a necessary comparison. Color retains its scientific role throughout.
 - Avoid the narrated template's permanent chapter header, elapsed-time counter, page number, progress rail, and duplicate subtitle band. A small chapter marker may appear briefly when it helps orientation. Keep sources discreet near the relevant scene or in the companion; retain essential assumptions and units on screen.
 - Use a large readable title and numbers, a smaller short explanation, then sparse direct labels. A restrained Song/serif display face can echo the reference; use a clean face for small annotations and verify Chinese/math glyphs. Secondary English captions are optional, not required decoration.
-- Default to crisp strokes with little or no decorative glow. A faint local gold halo may emphasize the active point or result. Do not apply bloom to every label or add decorative particles behind every graph. An explicit no-glow request removes halos completely.
+- Ask whether glow is wanted as the second pre-production question; minimalist style does not answer that question. With glow enabled, place restrained soft halos behind active curves/points and selected results. Preserve crisp cores and text, ample negative space, and the limited palette. Do not bloom every label or add decorative particles behind every graph. With no-glow selected, remove halos completely. Preserve an explicit low-glow preference.
 - The existing requirement for rich explanatory graphics still applies. Simplicity comes from clear visual selection, not from replacing the mechanism with lists or tables. A short typographic opening or conclusion must not become the whole explanation.
 
 ## Text takes over the explanatory role
@@ -46,14 +46,16 @@ Build the timeline from **reading → visible action → observation → conclus
 - Animate meaningful changes: grow the same bars, move the marker, update the same curve, or carry the same object into the next view. Stop movement where the viewer needs to compare. Use deliberate pacing rather than a repeated decorative loop.
 - Prefer shared-object movement, a clean cut, or a short fade through the background. Avoid overlapping two complete text-bearing frames. Give a major conclusion a quiet hold.
 - Review the actual encoded transitions before, during, and after the change, and several frames after completion. Explicitly check “转场后是否重影”, including stale labels, doubled curves, old sources, and alpha trails. Existing cover and transition checks remain mandatory.
-- Do not guess a music tempo or insert dummy beats when the owner has not supplied music. Leave a stable, editable sequence that accepts a music bed later. If they later provide a track, align major changes where useful while preserving reading and observation time.
+- Use the confirmed instrumental We Never recording, not merely a guessed song title or tempo. Align major changes to the actual track where useful, without shortening reading/observation holds. Keep the finished duration within 180–240 seconds. Extend a shorter track with a clean musical edit or crossfade, avoid abrupt loop clicks, and fade the opening/ending naturally.
 
 Example storyboard record:
 
 ```yaml
 style: minimalist_no_voiceover
 voiceover: false
-music: user_adds_after_delivery
+music: confirmed_we_never_instrumental
+duration_seconds: 180_to_240
+glow: ask_user
 question: Why does the motor continue to accelerate after reaching the target?
 on_screen_text: 积分还没消掉，出力就不会立刻收住。
 carry_in: [motor, target_line, actual_speed, integral_meter]
@@ -63,10 +65,26 @@ carry_out: [same_motor, same_target_line, reduced_integral_meter]
 evidence_type: original model calculation
 ```
 
+## Confirmed music identity
+
+The owner confirmed the exact choice on 2026-10-15:
+
+- Title: **WeNever (Remix)（若如初见）**.
+- Artists / remix attribution supplied by the owner: **Hi Noise / 秋成**.
+- Intended use: instrumental background music for 3–4 minute minimalist videos, with no spoken narration.
+
+Use this exact version, not an unrelated We Never recording or the original Hi Noise release by title alone. The metadata does not supply the recording: reuse an available owner-provided/usable audio asset and record its source, duration and identifier locally. If only a vocal version is available, do not silently treat it as instrumental; obtain the instrumental asset or clarify the needed edit. Do not repeatedly ask which artist/version the owner means after this confirmation.
+
 ## Audio and delivery
 
-For this owner, choosing this mode means: **do not synthesize speech, do not choose or generate background music, and do not add sound effects unless requested**. Deliver an MP4 with no audio stream, ready for the owner to add their instrumental track. Do not call it a music-mixed final. The existing default male narrator remains available when choice 1 is used later.
+For this owner, choosing this mode means **no human speech or TTS**, a **3–4 minute** finished edit, and instrumental **We Never** as the default music. The original male narrator remains available for choice 1.
 
-Deliver a separate PNG cover and include it as the actual opening. Match the cover to this composition and keep the opening readable without narration. Include a compact timed text/source companion; SRT is optional when integrated reading text is sufficient. Keep the requested aspect ratio; do not infer a mandatory ratio or duration solely from this reference.
+Before each new video, confirm (1) whether to use minimalist style, with its duration/music defaults stated, and (2) whether to add glow. Explicit answers in the current brief count; do not ask again for already answered items or routine edits.
 
-Before delivery, watch representative encoded sequences in silence. Check that the question, operation, consequence, and conclusion remain understandable; text holds are sufficient; the main graphic is not obscured; no passage relies on missing narration; no unexpected audio stream exists; the separate cover matches the encoded opening; and every transition passes the post-transition ghosting check. Verify plotted values and evidence just as in narrated mode.
+Record the exact artist/version, source and usable audio asset once confirmed, then reuse it without repeatedly asking. A title alone can identify several recordings: ask for artist/link or an existing local file path if the intended version is still ambiguous, while completing independent visual work. Do not claim music was added until the actual audio is available and muxed; do not substitute a different or generated track. Keep the recording outside the shared skill repository unless publication is specifically authorized. Store only metadata/preferences in the public skill.
+
+Use the requested track as a continuous instrumental bed. Set a comfortable level, prevent clipping, smooth repeated sections if needed, and fade the beginning/end. Check the encoded audio stream, duration, joins and coverage. An explicit silent / owner-adds-music request overrides this default and calls for an MP4 with no audio stream. Add sound effects only when requested.
+
+Deliver a separate PNG cover and include it as the actual opening. Match the cover to this composition and keep the opening readable without narration. Include a compact timed text/source companion; SRT is optional when integrated reading text is sufficient. Keep the requested aspect ratio; the 3–4 minute duration is this owner's explicit preference, not a rule inferred from the reference.
+
+Before delivery, watch representative encoded sequences in silence. Check that the question, operation, consequence, and conclusion remain understandable; text holds are sufficient; the main graphic is not obscured; no passage relies on missing narration; audio contains only the confirmed instrumental track when requested (or no stream when silence is requested); the 180–240 second duration is met; the separate cover matches the encoded opening; and every transition passes the post-transition ghosting check. Verify plotted values and evidence just as in narrated mode.

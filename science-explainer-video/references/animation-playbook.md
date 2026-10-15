@@ -2,7 +2,7 @@
 
 Read this when deciding what should move and how one explanation should lead into another.
 
-This playbook supplies shared causal, evidence, and transition checks. In 无配音简约风, replace spoken beats and narration-driven timing with on-screen reading/action beats from [minimalist-no-voiceover.md](minimalist-no-voiceover.md). Do not require voice synthesis, a transcript band, or an audio stream in that mode.
+This playbook supplies shared causal, evidence, and transition checks. In 无配音简约风, replace spoken beats and narration-driven timing with on-screen reading/action beats from [minimalist-no-voiceover.md](minimalist-no-voiceover.md). Do not require voice synthesis or a transcript band in that mode. This owner's default is a 3–4 minute edit with confirmed instrumental We Never; an explicit silent brief overrides the music default.
 
 ## Plan a scene around an observable operation
 
@@ -55,7 +55,7 @@ Create a standalone PNG cover at the video's resolution and aspect ratio, and de
 
 A readable hold of about 2–3 seconds is a useful starting point; adapt it to title length and the user's brief. Use a clean shared-object change, cut, or brief fade through dark into the first explanation. Avoid crossfading complete text layers. Inspect the encoded first frame, cover hold, transition, and several fully settled frames of the first scene for readability and ghosting.
 
-If inserting a cover before an existing edit, shift all downstream animation, on-screen text, and any narration or subtitle timing by the exact inserted duration. Check the first explanation and a later one for synchronization, and verify the resulting duration and successful full decode. In narrated mode, keep the approved voice and normal playback speed unless the user asks to change them. In minimalist mode, keep the edit free of audio unless requested. Include cover-file, encoded-opening, and post-transition ghosting review results in the delivery checks.
+If inserting a cover before an existing edit, shift all downstream animation, on-screen text, and any narration or subtitle timing by the exact inserted duration. Check the first explanation and a later one for synchronization, and verify the resulting duration and successful full decode. In narrated mode, keep the approved voice and normal playback speed unless the user asks to change them. In minimalist mode, use only the confirmed instrumental music, with no speech or TTS; an explicit silent brief calls for no audio stream. Keep the finished edit within 3–4 minutes for this owner. Include cover-file, encoded-opening, and post-transition ghosting review results in the delivery checks.
 
 ## Literature sequence
 

@@ -12,14 +12,19 @@ Produce a watchable video in which the viewer follows the same object from a phe
 Keep two choices available; adding the second does not replace the first or change the approved narrator.
 
 1. **男声讲解风 — narrated explanation:** the existing continuous diagrams with the user's approved voice; choose standard, low, or no glow according to the brief.
-2. **无配音简约风 — no-voiceover minimalist:** concise on-screen prose and a spacious, direct main graphic carry the explanation. Produce no human speech or TTS. This owner supplies their own instrumental music, so deliver a silent edit with no music or sound effects unless explicitly requested. Read [references/minimalist-no-voiceover.md](references/minimalist-no-voiceover.md) before storyboarding this mode.
+2. **无配音简约风 — no-voiceover minimalist:** concise on-screen prose and a spacious, direct main graphic carry the explanation. Produce no human speech or TTS. For this owner, keep the finished video between **3 and 4 minutes** and use instrumental **WeNever (Remix)（若如初见）— Hi Noise / 秋成** as background music, unless the current brief overrides these preferences. Read [references/minimalist-no-voiceover.md](references/minimalist-no-voiceover.md) before storyboarding this mode.
 
-For a new video whose style is unspecified, ask once: “这次用哪种风格：原男声讲解风，还是无配音简约风（音乐你自行添加）？” An explicit style choice in the current brief answers this question. Preserve it for routine revisions. In minimalist mode, use the restrained surface treatment in its reference; an explicit low/no/standard-glow instruction overrides that preset. In narrated mode, ask the glow question below if the current brief has not answered it. Research and scripting may proceed while a needed style answer is pending.
+Before producing a new video, confirm these **two questions together**, without adding a separate redundant style/glow round:
+
+1. “是否使用简约风？（简约风成片 3–4 分钟，无人声，背景音乐默认用纯音乐《We Never》）” Offer 简约风 and 原男声讲解风.
+2. “是否加泛光？” Offer 加泛光 and 不加泛光. A requested low-glow treatment counts as a specific answer and should be preserved.
+
+An explicit answer already present in the current brief counts; ask only the missing items. Preserve the choices for routine revisions. In minimalist mode with glow enabled, add restrained halos to active curves/points while preserving spacious composition and crisp text; no-glow removes halos. In narrated mode, retain the existing approved voice and apply the chosen surface treatment. Research and scripting may proceed while a needed answer is pending; wait before style-dependent rendering.
 
 ## Preserve the brief
 
 - Use the user's approved sample and constraints when available. Do not claim to have watched or heard a reference that has not actually been inspected.
-- For a new narrated video with no explicit glow choice, ask: “这次视频是否使用低泛光模式（画面更朴素、线条更清晰）？” Offer low-glow, standard-glow, and no-glow choices. Ask again for a revision that changes the surface treatment, but preserve the chosen mode for routine edits. An explicit choice in the current brief counts as the answer; a previous video's choice alone does not. Wait for the answer before style-dependent previews or rendering. Selecting 无配音简约风 already selects its restrained visual preset unless the user says otherwise; do not add a redundant glow question.
+- Apply the two-question confirmation above. A previous video's style/glow choice alone does not answer a new video's questions; an explicit choice in the current brief does. Do not infer no-glow merely from “简约风”. Keep explicit standard-, low-, or no-glow preferences and ask only when they are missing.
 - Default to normal playback speed. Change speed only when requested, keeping audio pitch and subtitle timing consistent.
 - For a new standalone video, 1920 × 1080 landscape is a useful default; preserve the requested orientation and aspect ratio.
 - In Chinese audience-facing explanations, prefer “我们” for shared reasoning. Use “我” when the speaker describes their own implementation, choices, and experiments. Preserve the intended perspective in other languages.
@@ -90,7 +95,7 @@ Before the full render, inspect frames where labels are longest, objects cross, 
 
 Deliver an encoded video, synchronized subtitles if useful, and a concise source/script companion. Verify the actual encoded file: resolution, aspect ratio, duration, successful full decode, audio presence when narrated, subtitle bounds, and representative transition/diagram frames. For quantitative scenes, check plotted values and displayed metrics against the data. A static contact sheet does not establish temporal synchronization.
 
-For 无配音简约风, also verify that the delivered file has no unintended narration, music, or sound effects; prefer an MP4 with no audio stream while the owner is adding music later. Deliver the separate cover and a compact timed text/source companion. Export subtitles only when useful; the integrated reading text remains the primary explanation.
+For 无配音简约风, verify a 3–4 minute finished duration and no human speech or TTS. When music is requested/defaulted, check the confirmed instrumental WeNever (Remix)（若如初见）— Hi Noise / 秋成 asset, music coverage, clean loop/edit joins, suitable level, and opening/ending fades; do not silently substitute another track. An explicit silent or owner-adds-music brief instead calls for no audio stream. Deliver the separate cover and a compact timed text/source companion. Export subtitles only when useful; the integrated reading text remains the primary explanation.
 
 Check numeral and unit formatting in both burned-in captions and exported subtitle files before delivery; changing only the sidecar file does not update the video.
 
