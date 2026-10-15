@@ -1,0 +1,35 @@
+{
+  "title": "WeNever (Remix)（若如初见）",
+  "artists": [
+    "Hi Noise",
+    "秋成"
+  ],
+  "purpose": "Default instrumental background music for 3–4 minute minimalist videos; no spoken narration",
+  "duration_seconds": 192.84172916666665,
+  "source": "Extracted from the music video supplied by the repository owner",
+  "publication_request_date": "2026-10-15",
+  "attribution": "Hi Noise / 秋成",
+  "license_notice": "LICENSE.txt",
+  "mit_license_applies": false,
+  "files": {
+    "original": {
+      "path": "we-never-remix.m4a",
+      "codec": "AAC",
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "processing": "Stream copy; original audio packets retained; unrelated container metadata removed",
+      "sha256": "d6246c78899d2a1d5153e92a59245a5809293496675e55d4638df647e0b5c2d2"
+    },
+    "compatibility": {
+      "path": "we-never-remix.mp3",
+      "codec": "MP3",
+      "bit_rate_kbps": 256,
+      "sample_rate_hz": 44100,
+      "channels": 2,
+      "gain_db": -4,
+      "processing": "Transcoded from the supplied source with 4 dB headroom; not a lossless format",
+      "sha256": "2be0e1384373f4b13d005ccb51feda6399b31757fb7d6d7b591263218ca6879c"
+    }
+  },
+  "editing": "Use these full-length sources. Apply any required repeat, level and opening/ending fades per video."
+}

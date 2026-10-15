@@ -1,0 +1,12 @@
+WeNever (Remix)（若如初见）
+Attribution: Hi Noise / 秋成
+
+This is a third-party music recording extracted from the owner's supplied
+music video and included at the owner's explicit request on 2026-10-15.
+The recording is NOT covered by this repository's MIT license. Rights in the
+composition and recording remain with their respective holders. Inclusion
+in this repository does not alter the recording's licensing status or grant
+additional rights in third-party music.
+
+Provenance and scope:
+https://github.com/YANG985-CMD/science-explainer-video-skill/blob/main/THIRD_PARTY_NOTICES.md

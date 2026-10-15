@@ -23,7 +23,13 @@
 1. 是否使用简约风？简约风成片为 **3–4 分钟**，无人声，背景音乐默认选 **《WeNever (Remix)（若如初见）》— Hi Noise / 秋成**。
 2. 是否加泛光？加泛光时仍保留清晰线条和简洁构图；也可明确选择低泛光或无泛光。
 
-[无配音简约风规范](science-explainer-video/references/minimalist-no-voiceover.md)记录了构图、短文案、阅读节奏和准确曲目。歌曲音频不随仓库分发；制作时使用可用音源，核对版本后混入成片。
+[无配音简约风规范](science-explainer-video/references/minimalist-no-voiceover.md)记录了构图、短文案、阅读节奏和准确曲目。按所有者的明确要求，现已提供这首背景音乐的独立音源：
+
+- [M4A 原音轨](science-explainer-video/assets/music/we-never-remix/we-never-remix.m4a)：直接提取 AAC 音轨，没有重新编码。
+- [MP3 通用版](science-explainer-video/assets/music/we-never-remix/we-never-remix.mp3)：256 kbit/s，转换时预留 4 dB 电平余量。
+- [曲目信息与文件校验值](science-explainer-video/assets/music/we-never-remix/music_profile.json)。曲目为《WeNever (Remix)（若如初见）》— Hi Noise / 秋成，约 3 分 13 秒。
+
+这些文件是完整音源；成片中的循环、音量调整与首尾淡入淡出应按每次视频重新处理。音乐署名和许可范围见[第三方资源说明](THIRD_PARTY_NOTICES.md)。
 
 ## 视频同款声线
 
@@ -84,4 +90,4 @@ python science-explainer-video/scripts/render_example.py \
 
 ## License
 
-仓库代码、文档与此次授权公开的参考音频使用 MIT。Qwen 模型遵守其上游 Apache-2.0 许可证；依赖包和本机字体遵守其各自许可证。
+仓库代码、文档与所有者授权公开的男声参考音频使用 MIT。第三方背景音乐不适用 MIT，见[第三方资源说明](THIRD_PARTY_NOTICES.md)。Qwen 模型遵守其上游 Apache-2.0 许可证；依赖包和本机字体遵守其各自许可证。
