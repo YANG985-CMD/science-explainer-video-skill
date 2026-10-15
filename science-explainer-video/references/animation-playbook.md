@@ -4,6 +4,8 @@ Read this when deciding what should move and how one explanation should lead int
 
 This playbook supplies shared causal, evidence, and transition checks. In 无配音简约风, replace spoken beats and narration-driven timing with on-screen reading/action beats from [minimalist-no-voiceover.md](minimalist-no-voiceover.md). Do not require voice synthesis or a transcript band in that mode. This owner's default is a 3–4 minute edit with confirmed instrumental We Never; an explicit silent brief overrides the music default.
 
+The owner's newer 2026-10-15 visual reference takes priority for palette, transitions, text entrances, and meaningful motion. Read [dynamic-tech-style.md](dynamic-tech-style.md) in both modes. Retain this playbook's scientific accuracy, caption, cover, and encoded-review checks.
+
 ## Plan a scene around an observable operation
 
 Use a scene record rather than a list of slide headings:
@@ -37,7 +39,7 @@ These are animation patterns. They do not prove that a named paper uses a partic
 
 ## Transitions and visual substance
 
-For 无配音简约风, transitions and text entrances/exits must feel smooth: use eased graphics, gentle opacity changes and small text motion, not abrupt pops. Separate the text layer from graphic continuity and keep different text layers from overlapping; apply this to within-scene sentence changes as well. Read the minimalist reference's timing guidance and inspect actual encoded motion, including settled post-transition frames.
+In both modes, transitions and text entrances/exits must feel smooth and purposeful. Follow the new reference's shared-object movement/reframing, path drawing, scans, staggered reveals, and focus changes. A small fade/move is a quiet-caption option, not the only motion recipe. Separate text from graphic continuity, prevent competing text overlap, and apply the treatment within scenes as well as at chapter boundaries. Inspect actual encoded motion, including settled post-transition frames.
 
 
 Build a visual inventory from the narration timeline before rendering. For every spoken beat, record the object, visible operation, changing state, and next view. Mark a beat for revision if its entire frame is only text, a formula, or a table. Replace it with the relevant physical device, signal trace, vector, or mechanism; keep explanatory labels short. A table may support a comparison when its values visibly drive the diagram beside it.
@@ -85,7 +87,7 @@ For objective landscapes, retain the metric definition and fixed parameters. Lab
 Use the mode chosen for the current video under the pre-production question in `SKILL.md`. The choice changes surface treatment; preserve the same scientific content, causal animation, color identities, subtitle layout, and approved voice.
 
 - **Low glow:** use a dark matte background, crisp fine strokes, and muted accents from the chosen palette. Remove decorative glows on boxes, connectors, and text. Keep any halo around an active object barely visible. With a separate blurred glow layer, about 10% of its standard compositing opacity is a useful starting point; adjust or omit it after inspecting frames. Preserve core-stroke brightness and text contrast.
-- **Standard glow:** use clearly visible strengthened line halos behind crisp active curves or points. Combine a narrow near halo with a broader soft halo while preserving the original stroke color and unblurred text. Keep intersections and nearby comparison curves distinguishable. The palette choice (金色强调 or 深蓝青金) is independent of glow and narration.
+- **Standard glow:** use clearly visible local halos behind an active point, scan head, or changed region. Combine a narrow near halo with a broader soft halo while retaining a crisp core, quieter context, and sharp text. Keep intersections and nearby comparison curves distinct. The palette choice (金色强调 or 冰蓝香槟金) is independent of glow and narration; meaningful motion is independent of halo intensity.
 
 Inspect dense curve crossings, small labels, equations, and transitions in the selected mode. Store the choice with rendering settings and keep it consistent throughout the video; do not add an on-screen mode or production-status label.
 

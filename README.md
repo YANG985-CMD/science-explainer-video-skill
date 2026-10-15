@@ -22,11 +22,11 @@
 
 1. 是否使用简约风？简约风成片为 **3–4 分钟**，无人声，背景音乐默认选 **《WeNever (Remix)（若如初见）》— Hi Noise / 秋成**。
 2. 是否加泛光？加泛光时仍保留清晰线条和简洁构图；也可明确选择低泛光或无泛光。
-3. 配色选 **金色强调**，还是 **深蓝青金（原男声讲解风配色）**？后者使用深蓝底、青色主线、金色对比和米白参考对象，必要时用紫色/粉色区分额外变量。选配色不会改变是否配人声。
+3. 配色选 **金色强调**，还是 **冰蓝香槟金（新版科技风）**？后者使用深黑蓝底、冰蓝结构、冷白文字和香槟金焦点，必要时用少量柔紫或玫瑰色区分状态。新版替代原“深蓝青金”，选配色不会改变是否配人声。
 
-加泛光时采用更明显的线条光晕，同时保留清晰核心和文字。画面底部不再放来源/方法的小字行，依据完整放在附带文档里，图中必要的单位、条件和解释仍保留。
+加泛光时，将柔和光晕集中在有意义的活动光点、扫描头和变化区域，保留清晰核心、文字及安静的背景结构。画面底部不放来源/方法小字行，依据完整放在附带文档里，图中必要的单位、条件和解释仍保留。
 
-简约风的转场、文字出现必须丝滑：图形用缓动承接，文字轻微移动并渐显、渐隐，避免硬切和突然跳出；图文分层处理，转场完成后检查没有旧字或残影。
+2026-10-15 新增参考：[电子智人《自指：我是个怪圈》](https://www.douyin.com/video/7692591222837300507)。转场、文字入场、配色和动感，以这条新参考优先；冲突的旧规则已替换。两个讲解模式都采用对象承接与重构图、路径绘制与扫描、逐字/分短语揭示及焦点变化，保留读图停顿，不再把全片做成同一种淡入淡出。图文分层，转场完成后检查没有意外残影。具体观察、实现建议及配色见[动态科技风规范](science-explainer-video/references/dynamic-tech-style.md)；原有音色、简约风 3–4 分钟及背景音乐约定继续保留。
 
 [无配音简约风规范](science-explainer-video/references/minimalist-no-voiceover.md)记录了构图、短文案、阅读节奏和准确曲目。按所有者的明确要求，现已提供这首背景音乐的独立音源：
 
@@ -87,6 +87,7 @@ python science-explainer-video/scripts/render_example.py \
 
 - [Skill 入口](science-explainer-video/SKILL.md)：适用范围、制作规则、音色与证据边界、交付检查。
 - [分镜与证据参考](science-explainer-video/references/animation-playbook.md)：连续镜头、论文承接、定量场景与示例模型。
+- [动态科技风规范](science-explainer-video/references/dynamic-tech-style.md)：最新参考的观看记录、优先级、转场、文字揭示、动感与冰蓝香槟金配色。
 - [辉光画布 helper](science-explainer-video/scripts/glow_canvas.py)：主线、柔和辉光、字幕区域和 ffmpeg 输出。
 - [RC 动画示例](science-explainer-video/scripts/render_example.py)：模型与画面同步的最小示范。
 - [公开声线资源](science-explainer-video/assets/voice/default-zh-male/)与[使用说明](science-explainer-video/references/voice-profile.md)：视频同款参考音频、参数、依赖与生成方法。

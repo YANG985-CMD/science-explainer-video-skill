@@ -7,6 +7,12 @@ description: Create or revise science and engineering videos with continuous cau
 
 Produce a watchable video in which the viewer follows the same object from a phenomenon, through its mechanism, to an explanation. The defining style is **continuous causal animation**; a dark palette and the selected glow mode support it.
 
+## Latest owner visual reference — 2026-10-15
+
+The owner selected [电子智人：自指 / 我是个怪圈](https://www.douyin.com/video/7692591222837300507) as the new reference for **transitions, text entrances, palette, and stronger meaningful motion**. Read [references/dynamic-tech-style.md](references/dynamic-tech-style.md) before storyboarding or rendering either explanation mode.
+
+For this owner, current explicit instructions take priority, then this new reference's visual rules, then older examples. Replace older fade-only movement recipes and the former saturated cyan-gold narrated palette where they conflict. This is a visual update to both existing modes, not a third narration mode; retain the approved male voice, minimalist duration/music, cover, numerical-formatting, evidence, and review requirements unless the current brief changes them.
+
 ## Choose the video style
 
 Keep two choices available; adding the second does not replace the first or change the approved narrator.
@@ -18,9 +24,9 @@ Before producing a new video, confirm these **three questions together**, keepin
 
 1. “是否使用简约风？（简约风成片 3–4 分钟，无人声，背景音乐默认用纯音乐《We Never》）” Offer 简约风 and 原男声讲解风.
 2. “是否加泛光？” Offer 加泛光 and 不加泛光. A requested low-glow treatment counts as a specific answer and should be preserved.
-3. “配色选金色强调，还是深蓝青金（原男声讲解风配色）？” Offer 金色强调 and 深蓝青金. Choosing the narrated palette does not add narration or change the minimalist duration/music requirements.
+3. “配色选金色强调，还是冰蓝香槟金（新版科技风）？” Offer 金色强调 and 冰蓝香槟金. The new reference replaces the former 深蓝青金 option. An explicit request to follow the new reference answers this palette question. Palette does not add narration or change minimalist duration/music.
 
-An explicit answer already present in the current brief counts; ask only the missing items. Preserve the choices for routine revisions. With glow enabled, use visibly stronger line halos behind crisp active curves/points while preserving spacious composition, distinct curve colors, and sharp text. A near halo plus a broader soft halo is a useful implementation; keep the original core stroke intact. No-glow removes halos, and an explicit low-glow preference reduces them. Apply the selected palette independently of the narration choice. In narrated mode, retain the existing approved voice and apply the chosen surface treatment. Research and scripting may proceed while a needed answer is pending; wait before style-dependent rendering.
+An explicit answer already present in the current brief counts; ask only the missing items. Preserve the choices for routine revisions. With glow enabled, concentrate soft local halos on the active point, scan head, or changed region behind a crisp core; do not make every line equally bright. A near halo plus a broader soft halo is useful locally. No-glow removes halos, and an explicit low-glow preference reduces them. Preserve meaningful motion in every glow mode. Apply the selected palette independently of narration. Research and scripting may proceed while a needed answer is pending; wait before style-dependent rendering.
 
 ## Preserve the brief
 
@@ -53,7 +59,7 @@ For a paper or algorithm, animate **difficulty → visible failure → added ope
 
 ## Transitions and visual substance
 
-In minimalist mode, the owner's requirement is: **“转场、文字的出现不能太生硬，要丝滑。”** Use eased graphic continuity and a gentle text entrance/exit instead of abrupt pops or whole-frame hard cuts. Keep graphic and text layers separate: old text departs before different new text arrives, while the meaningful graphic can continue or dissolve smoothly. Leave a readable settled hold, and verify the encoded motion and post-transition ghosting; see the minimalist reference for timing guidance.
+The owner's requirement remains: **“转场、文字的出现不能太生硬，要丝滑。”** The new reference adds more spatial and semantic motion: carry, scale, reframe, draw, scan, split, or regroup the relevant object into the next explanation. Use staggered phrase/character reveals, masks, and movement from a meaningful source when appropriate; a soft fade is one option, not the universal template. Keep graphic and text layers separate, preserve reading holds, and review encoded motion and settled post-transition frames. Apply [the new motion/text rules](references/dynamic-tech-style.md) in both modes.
 
 
 The owner's standing requirement is: “视频检查一下转场，不要出现一张图只有字表的情况，要把图丰富起来。”
@@ -66,12 +72,12 @@ The owner's standing requirement is: “视频检查一下转场，不要出现�
 
 ## Visual language
 
-Palette and explanation style are independent. Offer **金色强调** and **深蓝青金（原男声讲解风配色）** before each new video when the brief has not selected one.
+Palette and explanation style are independent. Offer **金色强调** and **冰蓝香槟金（新版科技风）** before each new video when the brief has not selected one.
 
 - **金色强调 / dark ivory-gold:** near-black blue `#090F15`, off-white `#E8E9E1`, gray context `#8D979E`, warm gold active emphasis `#D3B370`.
-- **深蓝青金 / dark cyan-gold:** blue-black `#050B0F`, off-white references `#EBF3EF`, cyan active/model objects `#59DDDC`, gold comparisons/residuals `#FFD278`. Optional pink `#E88BA7` and purple `#B1A2F4` distinguish additional variables only when needed.
+- **冰蓝香槟金 / midnight ice-blue and champagne:** near-black navy `#060A11`, cool ivory text `#E8EDF2`, ice-blue structure/signals `#A8D8F0`, champagne focal operations/results `#E6C68B`, muted labels `#718698`, dim structure `#26394A`. Restrained violet `#9C91D9` or rose `#D28FA5` may distinguish another state. These are implementation design tokens inferred from inspected frames, not recovered source-code colors. Keep one focal accent per beat; preserve each signal's identity and distinguish comparisons by style/label as well as color.
 
-Keep variable roles/colors consistent across scenes. Update text legends when recoloring curves. Minimalist mode keeps its spacious composition with either palette; selecting 深蓝青金 does not select the male voice.
+Keep variable roles/colors consistent across scenes. Update legends when recoloring curves. Minimalist mode keeps its spacious composition with either palette; selecting 冰蓝香槟金 does not select the male voice. Older palette previews are not confirmed defaults merely because they were generated; this new reference supersedes them for the owner's requested update.
 
 In narrated mode, reserve a subtitle area separate from the scientific content. Keep equation labels and provenance out of it. Prefer one short line, or at most two lines where needed; split by spoken phrase and rendered width rather than only character count. In minimalist mode, compose short explanatory text as part of the scene instead of adding a second transcript band. Highlight a few terms with their object colors.
 
@@ -81,7 +87,7 @@ Write displayed quantities in captions, titles, and graphics with Arabic numeral
 
 Glow should stay behind a crisp core stroke. It must not blur text, merge nearby curves, obscure intersections, or become the principal source of contrast. Avoid large card grids when a continuous canvas can show the relationship more clearly.
 
-**Low-glow mode:** preserve the dark canvas and continuous causal animation, use crisp solid strokes and muted accent colors, and greatly reduce or omit decorative halos. Keep text and equations sharp without bloom, and maintain contrast through the core strokes. **Standard-glow mode:** use clearly visible line glow, stronger than the former faint minimalist halo, with a crisp core and separate soft near/far halos. Keep neighboring curves distinguishable and text free from blur. Record the selected mode in production settings, not in audience-facing text; read [references/animation-playbook.md](references/animation-playbook.md#glow-modes) for rendering guidance.
+**Low-glow mode:** preserve the dark canvas and continuous causal animation, use crisp solid strokes and muted accent colors, and greatly reduce or omit halos. **Standard-glow mode:** use clearly visible but localized near/far halos around meaningful active objects; keep reference structure subdued, neighboring curves distinct, and text sharp. Increased motion must come from explained operations and composition, not stronger bloom. Record the selected mode in production settings, not in audience-facing text; read [references/animation-playbook.md](references/animation-playbook.md#glow-modes).
 
 The optional original Pillow helper [scripts/glow_canvas.py](scripts/glow_canvas.py) supplies a logical 1920 × 1080 canvas, soft glow, crisp lines, safe caption placement, and an ffmpeg pipe. [scripts/render_example.py](scripts/render_example.py) demonstrates a computed RC response, residual, parameter update, and objective plot. This minimal example is not a complete video generator or a substitute for subject-specific models.
 
