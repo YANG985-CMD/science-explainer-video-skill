@@ -22,3 +22,10 @@ render-output/
 
 # Background music explicitly requested for publication by the owner.
 !science-explainer-video/assets/music/we-never-remix/we-never-remix.mp3
+
+# Private music catalogs and newly downloaded masters are local resources.
+**/owner-music-library.json
+**/library_catalog.json
+*.m4a
+*.aac
+!science-explainer-video/assets/music/we-never-remix/we-never-remix.m4a

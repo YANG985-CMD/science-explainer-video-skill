@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "preset_id": "foc-line-bright60-v1",
+  "confirmed_date": "2026-10-16",
+  "provenance": {
+    "basis": "Actual final FOC renderer after video_common.py runtime overrides, not inferred reference-video colors.",
+    "video_filename": "FOC原理_线条动画_4K60帧_读音与连读修正版.mp4",
+    "video_sha256": "ac089af22c007473035e4b6a2cd702e0d1d7a4d944f59e08688c1433bbf3e790",
+    "renderer_sha256": {
+      "video_common.py": "12861f7cc5cf6876b4d0fd5645d56629846e0e658e24a4977a5312f61c3b9bb5",
+      "style_base.py": "c46b83967a847bccf2851337efba04ee83b3061a8eadf43edc11dbe9f32d8641",
+      "make_video.py": "611f4de8080f81ed62b73674f03937d7a0166c7169127e574daa9a5613817418",
+      "legacy_drawers.py": "7d46ea7d0ec7281c858558855bf3aa8a5808d6534ba21748d5c065dc9e52f563"
+    }
+  },
+  "canvas": {
+    "logical_px": [
+      1920,
+      1080
+    ],
+    "render_px": [
+      3840,
+      2160
+    ],
+    "scale": 2.0,
+    "composition_gain": 1.0,
+    "font_gain": 1.0,
+    "offset_px": [
+      0,
+      0
+    ],
+    "fps": 60,
+    "native_motion_frames": true
+  },
+  "colors": {
+    "background": {
+      "rgb": [
+        6,
+        10,
+        17
+      ],
+      "hex": "#060A11"
+    },
+    "text": {
+      "rgb": [
+        248,
+        252,
+        255
+      ],
+      "hex": "#F8FCFF"
+    },
+    "signal_a": {
+      "rgb": [
+        181,
+        234,
+        255
+      ],
+      "hex": "#B5EAFF"
+    },
+    "focus": {
+      "rgb": [
+        255,
+        218,
+        158
+      ],
+      "hex": "#FFDA9E"
+    },
+    "signal_b": {
+      "rgb": [
+        195,
+        179,
+        255
+      ],
+      "hex": "#C3B3FF"
+    },
+    "signal_c": {
+      "rgb": [
+        245,
+        163,
+        194
+      ],
+      "hex": "#F5A3C2"
+    },
+    "secondary_text": {
+      "rgb": [
+        177,
+        202,
+        220
+      ],
+      "hex": "#B1CADC"
+    },
+    "inactive_structure": {
+      "rgb": [
+        53,
+        75,
+        96
+      ],
+      "hex": "#354B60"
+    }
+  },
+  "background": {
+    "formula": "g=exp(-2*(((x/W-0.5)/0.45)^2+((y/H-0.46)/0.7)^2)); RGB=floor(clip(base_rgb+g*[2,4,6],0,255))",
+    "gradient_add_rgb": [
+      2,
+      4,
+      6
+    ],
+    "center_fraction": [
+      0.5,
+      0.46
+    ],
+    "spread_fraction": [
+      0.45,
+      0.7
+    ],
+    "exponent_gain": 2.0,
+    "noise": false
+  },
+  "line": {
+    "request_width_multiplier": 0.58,
+    "logical_width_min": 0.75,
+    "logical_width_max": 3.0,
+    "output_width_formula": "max(1,round(clamp(request_width*0.58,0.75,3.0)*scale))",
+    "roles": {
+      "waveform": {
+        "request_width": 3,
+        "output_px_4k": 3,
+        "bright_core_px_4k": 1
+      },
+      "vector_arrow": {
+        "request_width": 4,
+        "output_px_4k": 5,
+        "bright_core_px_4k": 2
+      },
+      "colored_projection": {
+        "request_width": 2,
+        "output_px_4k": 2,
+        "bright_core_px_4k": 1
+      },
+      "reference_axis": {
+        "request_width": 1,
+        "output_px_4k": 2,
+        "bright_core_px_4k": 0
+      }
+    },
+    "core_color_formula": "round(0.73*channel+0.27*255)",
+    "core_white_mix": 0.27,
+    "core_width_ratio": 0.42,
+    "core_color_hex": {
+      "signal_a": "#C9F0FF",
+      "focus": "#FFE4B8",
+      "signal_b": "#D3C8FF",
+      "signal_c": "#F8BCD2"
+    },
+    "opacity_full": 1.0,
+    "bright_core_color_roles": [
+      "signal_a",
+      "focus",
+      "signal_b",
+      "signal_c"
+    ],
+    "rounding": "Python round (ties to even)"
+  },
+  "glow": {
+    "recorded_mode": "standard",
+    "halo_canvas_px": [
+      960,
+      540
+    ],
+    "halo_to_render_scale": 4,
+    "eligible_color_roles": [
+      "signal_a",
+      "focus",
+      "signal_b",
+      "signal_c"
+    ],
+    "stroke_rgb_gain": 0.98,
+    "stroke_width_gain": 1.6,
+    "stroke_width_formula": "max(1,round(logical_width*2/4*1.6))",
+    "near": {
+      "gaussian_radius_halo_px": 1.6,
+      "gaussian_radius_4k_px": 6.4,
+      "channel_gain": 1.55
+    },
+    "far": {
+      "gaussian_radius_halo_px": 7.0,
+      "gaussian_radius_4k_px": 28.0,
+      "channel_gain": 1.05
+    },
+    "crop_padding_halo_px": 24,
+    "resize": "bilinear",
+    "composite": "saturated RGB add, not screen; near/far gain and add clamp each channel to 255",
+    "protected_mask": "Mask solid geometry and text before adding halo; protected pixels receive no additional halo.",
+    "opacity_gate": 0.01,
+    "global_exposure_gain": 1.0,
+    "low_no_glow": "Not measured in this accepted version. Retain the palette, core and fonts, disable halo for no-glow; record any deliberate low-glow adaptation separately."
+  },
+  "marker": {
+    "use": "Only meaningful curve/sample intersections; no arrow-tip light balls.",
+    "request_radius": 4,
+    "radius_formula": "max(2,request_radius*0.6)",
+    "actual_radius_logical": 2.4,
+    "actual_radius_4k_px": 4.8,
+    "core_white_mix": 0.28,
+    "core_radius_formula": "max(0.65,actual_radius*0.32)",
+    "halo_seed_gain": 0.9,
+    "radial_asset_radius_formula": "max(20,round(actual_radius*5))",
+    "radial_alpha_formula": "clip(100*exp(-7*q)+25*exp(-1.8*q),0,180), q=distance_squared/(asset_radius*scale)^2"
+  },
+  "typography": {
+    "family": "Microsoft YaHei Bold / 微软雅黑粗体",
+    "windows_font_filename": "msyhbd.ttc",
+    "weight": 700,
+    "font_unit": "nominal font pixels, not glyph ink bounding-box height",
+    "roles": {
+      "cover_subject": {
+        "logical_px": 180,
+        "render_px": 360
+      },
+      "cover_subtitle": {
+        "logical_px": 76,
+        "render_px": 152
+      },
+      "cover_descriptor": {
+        "logical_px": 38,
+        "render_px": 76
+      },
+      "scene_title": {
+        "logical_px": 55,
+        "render_px": 110
+      },
+      "bottom_caption": {
+        "logical_px": 52,
+        "render_px": 104
+      },
+      "diagram_label_min": {
+        "logical_px": 31,
+        "render_px": 62
+      },
+      "key_numeric_readout": {
+        "logical_px": 50,
+        "render_px": 100
+      },
+      "formula_default": {
+        "logical_px": 52,
+        "render_px": 104
+      },
+      "formula_dense": {
+        "logical_px": 48,
+        "render_px": 96
+      },
+      "formula_voltage_feedforward": {
+        "logical_px": 42,
+        "render_px": 84
+      }
+    },
+    "diagram_label_conversion": "max(31,round(requested_size*1.04)) logical px; then multiply by 2 exactly once",
+    "math": {
+      "engine": "Matplotlib MathText",
+      "font_family": "cm",
+      "dpi": 144,
+      "font_size_unit": "point",
+      "base_dpi": 72
+    },
+    "caption_emphasis_roles": [
+      "focus"
+    ],
+    "caption_emphasis_terms": [
+      "Clarke",
+      "Park",
+      "FOC"
+    ],
+    "caption_emphasis_numbers": true,
+    "text_glow": false,
+    "punctuation": "shared baseline; strip terminal Chinese full stop from a complete caption, preserve meaningful internal punctuation"
+  },
+  "layout_logical_px": {
+    "horizontal_center": 960,
+    "scene_title_center_y": 108,
+    "caption_single_center_y": 1000,
+    "caption_two_centers_y": [
+      958,
+      1023
+    ],
+    "caption_two_line_center_distance": 65,
+    "caption_max_line_width": 1720,
+    "safe_side_margin": 100,
+    "cover_subject_center": [
+      960,
+      215
+    ],
+    "cover_subtitle_center": [
+      960,
+      390
+    ],
+    "cover_descriptor_center": [
+      960,
+      920
+    ]
+  },
+  "timing_seconds": {
+    "ease": "p*p*(3-2*p), p=clamp(t/duration,0,1)",
+    "title_start": 0.08,
+    "title_fade_in": 0.65,
+    "title_y_motion_duration": 0.7,
+    "title_y_motion_logical_px": 9,
+    "title_fade_out": 0.4,
+    "body_start": 1.05,
+    "body_fade_in": 0.7,
+    "caption_fade_in": 0.07,
+    "caption_fade_out": 0.07,
+    "first_spoken_caption_normal_scene": 2.0,
+    "top_stays_visible": true,
+    "subsequent_cues": "Use final acoustic narration alignment; do not introduce an artificial subtitle delay."
+  },
+  "encoding": {
+    "pixel_format": "yuv420p",
+    "color_primaries": "bt709",
+    "color_transfer": "bt709",
+    "color_matrix": "bt709",
+    "range": "limited/tv",
+    "renderer_input": "RGB24, 8-bit per channel",
+    "codec": "h264_nvenc",
+    "preset": "p5",
+    "tune": "hq",
+    "rate_control": "vbr",
+    "cq_original_scenes": 17,
+    "cq_caption_reencoded_scenes": 14,
+    "gop_frames": 120
+  },
+  "usage": {
+    "owner_default": "Load this exact numeric preset when this owner asks to reuse the current FOC colors/brightness/line animation. Color names are aliases only.",
+    "overrides": "Current explicit instructions override individual fields; save the changed numeric values in the new video production settings. Glow selection, voice, BGM and playback speed remain independent."
+  }
+}

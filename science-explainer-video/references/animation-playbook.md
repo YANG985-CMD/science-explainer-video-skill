@@ -1,5 +1,7 @@
 # Storyboard and evidence playbook
 
+
+**2026-10-16 数值更新：** 颜色、细线芯、明亮程度和字号读取 [foc-bright60-style.json](foc-bright60-style.json)，单位与合成算法见 [foc-bright60-style.md](foc-bright60-style.md)；旧色名和泛化起点不能覆盖这版已确认参数。声音、BGM、泛光选择和当前明确要求仍独立。
 Read this when deciding what should move and how one explanation should lead into another.
 
 This playbook supplies shared causal, evidence, and transition checks. In 无配音简约风, replace spoken beats and narration-driven timing with on-screen reading/action beats from [minimalist-no-voiceover.md](minimalist-no-voiceover.md). Do not require voice synthesis or a transcript band in that mode. This owner's default is a 3–4 minute edit with confirmed instrumental We Never; an explicit silent brief overrides the music default.
@@ -99,7 +101,7 @@ Display text that explains the science or its basis. Do not put production-statu
 
 For this owner, do not render a bottom small-print row of provenance, method names, or citations, including “常规中心对齐 SVPWM 的 min/max 等价实现 [1,3]”. Preserve source titles, sections/figures and citations in the companion document. Put essential model conditions, units, or calculated-versus-measured distinctions in ordinary readable annotations beside the relevant diagram. Keep explanatory captions; an author/year may appear in main content when discussing that paper. Check the actual encoded lower edge after every scene change, including the cover and ending.
 
-Compare actual encoded subtitles with the spoken sentence, especially at action boundaries. Prefer phrase-level audio alignment over proportional-character estimates. If only a rough timeline is available, inspect representative joins and identify the approximation.
+For this owner, narrated subtitles contain the complete actual spoken words, not shortened summaries. Follow [the latest narration, pronunciation and wording corrections](narration-subtitle-corrections.md). Normalize quantity notation without changing content, align phrases against the final-speed narration, and use the same cue events for burned-in text and sidecar subtitles. Proportional-character estimates are draft timing only; verify and correct the actual encoded result at the opening, changed passages, middle and ending before delivery.
 
 ### Subtitle numbers and units
 
