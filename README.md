@@ -30,6 +30,8 @@
 
 2026-10-16 最新要求：所有者今后的视频直接采用**线条动画**，不再主动制作其它动画风格或多风格对比；封面主题最大，字幕和必要标签按[手机大字规范](science-explainer-video/references/line-animation-mobile-type.md)处理。男声版字幕必须是实际解说原话，并按最终速度音频逐句对齐，不能用摘要替代。原创讲解中的“本例”改为自然的“本视频”表述；UART/CAN/LIN/1-Wire 用单词读法、SPI 逐字母、I²C 读“i 方 c”，“引脚”的“脚”读 jiǎo。完整规则见[解说与字幕纠错规范](science-explainer-video/references/narration-subtitle-corrections.md)。1.1 倍、1.15 倍及无 BGM 属于具体视频设置，不是所有视频的新默认。
 
+字幕专用的两条通用规则：希腊字母中文译名统一显示为对应标准符号（如 α、β、γ、δ）；控制与信号处理经典算法相关人名采用标准英文拼写（如 Clarke、Park、Kalman、Mamdani）。这些规则适用于后续全部视频的烧录及导出字幕，保留原解说读音和内容，不回写 TTS 输入；具体大小写、语境与验收规则见[解说与字幕纠错规范](science-explainer-video/references/narration-subtitle-corrections.md)。
+
 [无配音简约风规范](science-explainer-video/references/minimalist-no-voiceover.md)记录了构图、短文案和阅读节奏。[自动配乐规则](science-explainer-video/references/music-selection.md)记录主题匹配、完整音源检查和署名要求。私人曲库通过本机配置接入，不随仓库分发；使用 `scripts/select_music.py` 可从实际可用的完整音源中选择。此前按所有者的明确要求提供的 WeNever 独立音源继续作为候选资源：
 
 - [M4A 原音轨](science-explainer-video/assets/music/we-never-remix/we-never-remix.m4a)：直接提取 AAC 音轨，没有重新编码。
